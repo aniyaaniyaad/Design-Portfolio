@@ -1,29 +1,14 @@
 /*
 Student Name: Aniya Dubose
 File Name: styles.css
-Date: 01/19/2025
+Date: 09/26/2021
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1
-{
-  margin: 10;
-  padding: 10;
-  border: 10;
-}
-
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+body, header, nav, main, footer, img, h1{
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 /*Style rules for body and images*/
@@ -47,7 +32,6 @@ header{
   text-align: center;
   font-size: 6em;
 }
-
 
 header h1{
   font-family: 'Fleur De Leah';
@@ -150,7 +134,9 @@ body, html {
   /* The image used */
   background-image: url("IMG_4422.jpeg");
 
-
+  /* Add the blur effect */
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
 
   /* Full height */
   height: 100;
@@ -176,29 +162,25 @@ body, html {
   z-index: 2;
   width: 80%;
   padding: 20px;
-  text-align: center;
+  text-align: center;-webkit-animation-name: bounce;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-direction: ;
 }
+
 
 /*Animation*/
-.glow{
-  color: #77ebf9;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+@-webkit-keyframes bounce {
+  0%, 40%, 80%, 100% 
+} 
+
+@keyframes bounce { 
+  0%, 40%, 80%, 100% 
 }
 
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #00d7f1, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
-                 0 0 50px #54a6af, 0 0 60px #54a6af, 0 0 70px #54a6af;
-  }
-  to {
-    text-shadow: 0 0 20px #eeeeee, 0 0 30px #77ebf9, 0 0 40px #77ebf9, 0 0 50px #77ebf9, 
-                 0 0 60px #77ebf9, 0 0 70px #77ebf9, 0 0 80px #77ebf9;
-  }
-}
 
+.animate__tada {
+  position: left;
+}
 
 /*style rules for home page title*/
 
@@ -268,25 +250,19 @@ nav li a{
 }
 
 .map {
-    border: 5px solid #488d95;
-  float: right;
-  padding: 1%;
+    border: 5px solid #373684;
+    width: 95%;
+    height: 50%;
 }
 
 form{
   background-color: #00aec3;
   width: 100%;
-  font-size: 2em;
-  position: center;
-  list-style-type: none;
 }
-
-
 .file{
   text-decoration: none;
-  color: grey;
+  color: black;
 }
-
 
 .file:hover{
   color: white;
@@ -296,7 +272,6 @@ video{
   width: 100%;
   height: auto;
 }
-
 #contact a{
   text-decoration: none;
   color: black;
@@ -305,5 +280,3 @@ video{
 #contact a:hover{
   color: white;
 }
-
-
