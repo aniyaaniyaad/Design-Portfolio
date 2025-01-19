@@ -5,10 +5,11 @@ Date: 09/26/2021
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1{
-  margin: 0;
-  padding: 0;
-  border: 0;
+body, header, nav, main, footer, img, h1
+{
+  margin: 10;
+  padding: 10;
+  border: 10;
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
