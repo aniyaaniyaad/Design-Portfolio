@@ -1,3 +1,13 @@
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+
 /* GLOBAL STYLES */
 body {
   background: #333;
